@@ -1,0 +1,173 @@
+header {
+    display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px 40px;
+            background: transparent; /* 🔁 Nền trong suốt */
+}
+
+header img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%; /* bo tròn */
+    border: 6px solid #ff0000; /* viền xanh lá */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* đổ bóng */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+body {
+            margin: 0;
+            padding: 0;
+           background-image: url('img/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 50, 0.4); /* overlay xanh đậm mờ */
+    z-index: -1;
+}
+ .name {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+.avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #ff0000; /* 🔁 Viền đỏ – có thể thay màu */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            object-fit: cover;
+        }
+.gach_ngang{
+    text-align: center;
+}
+.mxh{
+    text-align: center; 
+}
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-social {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 300px;
+}
+
+.btn-social i {
+    margin-right: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/* Màu từng nền tảng */
+.btn-social.fb {
+    background-color: #1877f2;
+}
+.btn-social.fb:hover {
+    background-color: #0d64d1;
+}
+
+.btn-social.ig {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+.btn-social.ig:hover {
+    opacity: 0.85;
+}
+.btn-social.zalo {
+    background-color: #0068ff;
+}
+.btn-social.zalo:hover {
+    background-color: #004ed1;
+}
+.btn-social.github {
+    background-color: #333;
+}
+.btn-social.github:hover {
+    background-color: #000;
+}
+.btn-social.locket {
+    background-color: #ffcf3f; /* màu vàng chủ đạo của Locket */
+    color: #222; /* chữ đậm dễ nhìn */
+}
+.btn-social.locket:hover {
+    background-color: #e6b900;
+    box-shadow: 0 4px 15px rgba(255, 207, 63, 0.4);
+}
+.footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer-contact span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-social {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: #ccc;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+#particles-js {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+

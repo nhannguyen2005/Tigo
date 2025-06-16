@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO MY PROFILE</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <header>
+            <img src="img/Avt.jpg" alt="Ảnh đại diện" class="avatar">
+            <div class="name">
+                <h1>NGUYỄN TRỌNG NHÂN - TIGO DEV</h1>
+            </div>
+             <div class="job-title">Frontend Developer | Game Developer | Digital FB Marketing</div> 
+        </div>
+        </header>
+        <div id="social-section">
+        <div class="gach_ngang">------------------------------------------------------------------------------------------</div>
+        <div class="mxh"> 
+            <h2>MẠNG XÃ HỘI</h2>
+            <div class="social-buttons">
+    <a href="https://www.facebook.com/TigoDev" target="_blank" class="btn-social fb">
+        <i class="fab fa-facebook-f"></i> Facebook: Nhân Nguyễn
+    </a>
+    <a href="https://www.instagram.com/tigodev_105" target="_blank" class="btn-social ig">
+        <i class="fab fa-instagram"></i> Instagram: Tigo Dev
+    </a>
+    <a href="https://zalo.me/0349332850" target="_blank" class="btn-social zalo">
+        <i class="fas fa-comment-dots"></i> Zalo: Nguyễn Trọng Nhân
+    </a>
+        <a href="https://github.com/nhannguyen2005" target="_blank" class="btn-social github">
+        <i class="fab fa-github"></i> GitHub: Tigo Dev
+    </a>
+    <a href="https://locket.camera/links/mBKmLJwmRWcZcjzS8
+" target="_blank" class="btn-social locket">
+    <i class="fas fa-camera-retro"></i> Locket: Nhân Nguyễn (TIGO)
+</a>
+</div>
+            </div>
+        </div>
+        </div>
+<audio id="bg-music" autoplay loop playsinline style="display: none;">
+  <source src="img/tinh-thu2.mp3" type="audio/mpeg">
+</audio>
+<script>
+    const audio = document.getElementById('bg-music');
+  // Tự động phát nếu trình duyệt cho phép
+  audio.play().catch(() => {
+    // Nếu bị chặn thì đợi click lần đầu
+    const resume = () => {
+      audio.play();
+      document.removeEventListener('click', resume);
+    };
+    document.addEventListener('click', resume);
+  });</script>
+  <script>
+  ///hiệu ứng bg
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 80 },
+    color: { value: "#00bcd4" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#00bcd4",
+      opacity: 0.4,
+      width: 1
+    },
+    move: { enable: true, speed: 2 }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" }
+    }
+  }
+});
+</script>
+    </body>
+<footer class="footer">
+    <div class="footer-contact">
+        <a href="mailto:devilgamingtv894@gmail.com"><i class="fas fa-envelope"></i> devilgamingtv894@gmail.com</a>
+        <a href="tel:+84349332850"><i class="fas fa-phone"></i> 0349 332 850</a>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/TigoDev" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/tigodev_105" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://zalo.me/0349332850" target="_blank"><i class="fas fa-comment-dots"></i></a>
+        <a href="https://github.com/nhannguyen2005" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p style="margin-top: 10px;">© 2025 Nguyễn Trọng Nhân - NOT COPYRIGHT</p>
+</footer>
+
+
+</html>
