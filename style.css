@@ -170,4 +170,56 @@ body::before {
   z-index: -1;
 }
 
+/* Responsive cho màn hình nhỏ hơn 768px (điện thoại) */
+@media (max-width: 768px) {
+  header {
+    padding: 40px 10px 20px;
+  }
+
+  .name h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .job-title {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .social-buttons {
+    width: 100%;
+  }
+
+  .btn-social {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social a {
+    font-size: 20px;
+  }
+}
+
+/* Responsive cho màn hình rất nhỏ (<480px) */
+@media (max-width: 480px) {
+  .name h1 {
+    font-size: 18px;
+  }
+
+  .btn-social i {
+    display: none; /* Ẩn icon nếu quá chật */
+  }
+}
 
