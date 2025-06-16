@@ -1,2 +1,2 @@
 # Tigo
-My_Bio.github.io
+nhannguyenbio.github.io
