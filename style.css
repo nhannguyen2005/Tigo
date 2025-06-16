@@ -219,7 +219,7 @@ body::before {
   }
 
   .btn-social i {
-    display: flex; /* Ẩn icon nếu quá chật */
+    display: none; /* Ẩn icon nếu quá chật */
   }
 }
 
