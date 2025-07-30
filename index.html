@@ -49,9 +49,9 @@
 </audio>
 <script>
     const audio = document.getElementById('bg-music');
-  // Tự động phát nếu trình duyệt cho phép
+ 
   audio.play().catch(() => {
-    // Nếu bị chặn thì đợi click lần đầu
+   
     const resume = () => {
       audio.play();
       document.removeEventListener('click', resume);
